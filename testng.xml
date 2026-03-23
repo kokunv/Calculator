@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Calculator Suite" parallel="tests" thread-count="10">
+
+    <test name="Basic operation">
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="SumTests"/>
+            <class name="SubTests"/>
+            <class name="MultTests"/>
+            <class name="DivTests"/>
+        </classes>
+    </test>
+    
+    <test name="Advanced operation">
+
+        <classes>
+            <class name="CosTests"/>
+            <class name="CtgTests"/>
+            <class name="TgTests"/>
+            <class name="SqrtTests"/>
+            <class name="SinTests"/>
+            <class name="PowTests"/>
+            <class name="PositiveNumTests"/>
+            <class name="NegativeNumTests"/>
+        </classes>
+    </test>
+
+</suite>
