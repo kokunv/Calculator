@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 public class SubTests extends TestRunner {
 
 
-    @Test(dataProvider = "subLongData",groups = "smoke")
+    @Test(dataProvider = "subLongData")
     public void subLongTest(long a, long b, long expected) {
         Assert.assertEquals(calculator.sub(a,b), expected,
                 "Incorrect value of sub excepted: " + expected);
     }
 
-    @Test(dataProvider = "subDoubleData",groups = "smoke")
+    @Test(dataProvider = "subDoubleData")
     public void subDoubleTest(double a, double b, double expected) {
         Assert.assertEquals(calculator.sub(a,b), expected, 0.0001,
                 "Incorrect value of sub excepted: " + expected);

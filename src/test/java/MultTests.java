@@ -5,13 +5,13 @@ import org.testng.annotations.Test;
 
 public class MultTests extends TestRunner {
 
-    @Test(dataProvider = "multLongData",groups = "smoke")
+    @Test(dataProvider = "multLongData")
     public void multLongTest(long a, long b, long expected){
         Assert.assertEquals(calculator.mult(a,b), expected,
                 "Incorrect value of mult excepted: " + expected);
     }
 
-    @Test(dataProvider = "multDoubleData",groups = "smoke")
+    @Test(dataProvider = "multDoubleData")
     public void multDoubleTest(double a, double b, double expected) {
         Assert.assertEquals(calculator.mult(a,b), expected, 0.0001,
                 "Incorrect value of mult excepted: " + expected);

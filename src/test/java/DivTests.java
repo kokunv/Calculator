@@ -4,13 +4,13 @@ import org.testng.annotations.Test;
 
 public class DivTests extends TestRunner {
 
-    @Test(dataProvider = "divLongData",groups = "smoke")
+    @Test(dataProvider = "divLongData")
     public void divLongTest(long a, long b, long expected){
         Assert.assertEquals(calculator.div(a,b), expected,
                 "Incorrect value of div excepted: " + expected);
     }
 
-    @Test(dataProvider = "divDoubleData",groups = "smoke")
+    @Test(dataProvider = "divDoubleData")
     public void divDoubleTest(double a, double b, double expected) {
         Assert.assertEquals(calculator.div(a,b), expected, 0.0001,
                 "Incorrect value of div excepted: " + expected);

@@ -3,11 +3,6 @@
 
     <test name="Basic operation">
 
-        <groups>
-            <run>
-                <include name="smoke"/>
-            </run>
-        </groups>
         <classes>
             <class name="SumTests"/>
             <class name="SubTests"/>

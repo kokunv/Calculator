@@ -7,13 +7,13 @@ import org.testng.annotations.Test;
 public class SumTests extends TestRunner{
 
 
-    @Test(dataProvider = "sumLongData" ,groups = "smoke")
+    @Test(dataProvider = "sumLongData")
     public void sumLongTest(long a, long b, long expected) {
         Assert.assertEquals(calculator.sum(a,b), expected,
                 "Incorrect value of sum excepted: " + expected);
     }
 
-    @Test(dataProvider = "sumDoubleData",groups = "smoke")
+    @Test(dataProvider = "sumDoubleData")
     public void sumDoubleTest(double a, double b, double expected) {
         Assert.assertEquals(calculator.sum(a, b), expected, 0.0001,
                 "Incorrect value of sum excepted: " + expected);
