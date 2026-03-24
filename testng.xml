@@ -4,24 +4,24 @@
     <test name="Basic operation">
 
         <classes>
-            <class name="SumTests"/>
-            <class name="SubTests"/>
-            <class name="MultTests"/>
-            <class name="DivTests"/>
+            <class name="basic.SumTests"/>
+            <class name="basic.SubTests"/>
+            <class name="basic.MultTests"/>
+            <class name="basic.DivTests"/>
         </classes>
     </test>
     
     <test name="Advanced operation">
 
         <classes>
-            <class name="CosTests"/>
-            <class name="CtgTests"/>
-            <class name="TgTests"/>
-            <class name="SqrtTests"/>
-            <class name="SinTests"/>
-            <class name="PowTests"/>
-            <class name="PositiveNumTests"/>
-            <class name="NegativeNumTests"/>
+            <class name="advanced.CosTests"/>
+            <class name="advanced.CtgTests"/>
+            <class name="advanced.TgTests"/>
+            <class name="advanced.SqrtTests"/>
+            <class name="advanced.SinTests"/>
+            <class name="advanced.PowTests"/>
+            <class name="validation.PositiveNumTests"/>
+            <class name="validation.NegativeNumTests"/>
         </classes>
     </test>
 

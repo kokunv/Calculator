@@ -1,8 +1,11 @@
+package advanced;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import runner.TestRunner;
 
-    public class TgTests extends TestRunner {
+public class TgTests extends TestRunner {
 
         @Test(dataProvider = "tgDoubleData")
         public void tgDoubleTest(double a,double expected) {

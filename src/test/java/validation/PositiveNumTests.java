@@ -1,6 +1,9 @@
+package validation;
+
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import runner.TestRunner;
 
 public class PositiveNumTests extends TestRunner {
 

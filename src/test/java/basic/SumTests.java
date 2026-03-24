@@ -1,10 +1,12 @@
+package basic;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import runner.TestRunner;
 
 
-public class SumTests extends TestRunner{
+public class SumTests extends TestRunner {
 
 
     @Test(dataProvider = "sumLongData")
