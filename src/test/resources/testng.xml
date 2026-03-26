@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Calculator Suite" parallel="tests" thread-count="2">
+<suite name="service.Calculator Suite" parallel="tests" thread-count="2">
 
     <test name="Basic operation">
 
@@ -21,7 +21,7 @@
             <class name="advanced.SineTest"/>
             <class name="advanced.PowerTest"/>
             <class name="validation.PositiveNumTests"/>
-            <class name="validation.NegativeNumTests"/>
+            <class name="validation.NegativeNumTest"/>
         </classes>
     </test>
 

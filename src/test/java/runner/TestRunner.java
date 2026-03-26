@@ -1,6 +1,7 @@
 package runner;
 
-import com.epam.tat.module4.Calculator;
+
+import service.Calculator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.BeforeMethod;
@@ -12,6 +13,8 @@ public class TestRunner {
 
     @BeforeMethod
     public void setUp(){
+        logger.info("Before method started.");
+
         calculator = new Calculator();
     }
 }
