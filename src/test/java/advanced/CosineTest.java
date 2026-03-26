@@ -18,15 +18,15 @@ public class CosineTest extends TestRunner {
     @Feature("Cosine")
     @Story("Calculates the cosine of an angle")
     public void cosineDoubleTest(double a,double expected) {
-        logger.info("COS test started for value: {}", a);
+        logger.info("Cosine test started for value: {}", a);
 
         double actual = calculator.cos(a);
 
-        logger.info("COS result: actual={}, expected={}", actual, expected);
+        logger.info("Cosine result: actual={}, expected={}", actual, expected);
 
-        CalculatorAssert.assertCos(actual, expected);
+        CalculatorAssert.assertCosine(actual, expected);
 
-        logger.info("COS test PASSED for value: {}", a);
+        logger.info("Cosine test PASSED for value: {}", a);
     }
 
     @DataProvider(name = "cosineDoubleData")

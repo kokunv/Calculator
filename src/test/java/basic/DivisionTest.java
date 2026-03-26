@@ -15,38 +15,38 @@ public class DivisionTest extends TestRunner {
             dataProvider = "divisionLongData",
             description = "Verify division for long values"
     )
-    @Epic("Calculator Operations")
+    @Epic("calculator.Calculator Operations")
     @Feature("Division")
     @Story("Division of long values")
-    public void divLongTest(long a, long b, long expected){
-        logger.info("Div test for long started: {} / {} = {}", a, b, expected);
+    public void divisionLongTest(long a, long b, long expected){
+        logger.info("Division test for long started: {} / {} = {}", a, b, expected);
 
         long result = calculator.div(a,b);
 
         logger.info("Actual result: {}", result );
 
-        CalculatorAssert.assertDiv(result, expected);
+        CalculatorAssert.assertDivision(result, expected);
     }
 
     @Test(
             dataProvider = "divisionDoubleData",
             description = "Verify division for double values with precision"
     )
-    @Epic("Calculator Operations")
+    @Epic("calculator.Calculator Operations")
     @Feature("Division")
     @Story("Division of double values")
-    public void divDoubleTest(double a, double b, double expected) {
-        logger.info("Div test for double started: {} / {} = {}", a, b, expected);
+    public void divisionDoubleTest(double a, double b, double expected) {
+        logger.info("Division test for double started: {} / {} = {}", a, b, expected);
 
         double result = calculator.div(a,b);
 
         logger.info("Actual result: {}", result );
 
-        CalculatorAssert.assertDiv(result, expected);
+        CalculatorAssert.assertDivision(result, expected);
     }
 
     @Test(description = "Verify division by zero throws NumberFormatException")
-    @Epic("Calculator Operations")
+    @Epic("calculator.Calculator Operations")
     @Feature("Division")
     @Story("Division of long to null")
     public void divisionLongOnNull(){

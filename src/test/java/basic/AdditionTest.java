@@ -17,28 +17,34 @@ public class AdditionTest extends TestRunner {
             dataProvider = "additionLongData",
             description = "Verify addition of two long values"
     )
-    @Epic("Calculator Operations")
+    @Epic("calculator.Calculator Operations")
     @Feature("Addition")
     @Story("Addition of long values")
     public void additionLongTest(long a, long b, long expected) {
-        logger.info("Sum test for long started: {} / {} = {}", a, b, expected);
+        logger.info("Addition test for long started: {} / {} = {}", a, b, expected);
 
         long result = calculator.sum(a,b);
 
         logger.info("Actual result: {}", result );
 
-        CalculatorAssert.assertSum(result,expected);
+        CalculatorAssert.assertAddition(result,expected);
     }
 
     @Test(
             dataProvider = "additionDoubleData",
             description = "Verify addition of two double values with precision"
     )
-    @Epic("Calculator Operations")
+    @Epic("calculator.Calculator Operations")
     @Feature("Addition")
     @Story("Addition of long values")
     public void additionDoubleTest(double a, double b, double expected) {
-        CalculatorAssert.assertSum(calculator.sum(a,b),expected);
+        logger.info("Addition test for double started: {} / {} = {}", a, b, expected);
+
+        double result = calculator.sum(a,b);
+
+        logger.info("Actual result: {}", result );
+
+        CalculatorAssert.assertAddition(result,expected);
     }
 
     @DataProvider(name = "additionDoubleData")

@@ -14,34 +14,34 @@ public class MultiplicationTest extends TestRunner {
             dataProvider = "multiplicationLongData",
             description = "Verify multiplication for long values"
     )
-    @Epic("Calculator Operations")
+    @Epic("calculator.Calculator Operations")
     @Feature("Multiplication")
     @Story("Multiplication of long values")
     public void multiplicationLongTest(long a, long b, long expected){
-        logger.info("Mult test for long started: {} / {} = {}", a, b, expected);
+        logger.info("Multiplication test for long started: {} / {} = {}", a, b, expected);
 
         long result = calculator.mult(a,b);
 
         logger.info("Actual result: {}", result );
 
-        CalculatorAssert.assertMult(result, expected);
+        CalculatorAssert.assertMultiplication(result, expected);
     }
 
     @Test(
             dataProvider = "multiplicationDoubleData",
             description = "Verify multiplication for double values with precision"
     )
-    @Epic("Calculator Operations")
+    @Epic("calculator.Calculator Operations")
     @Feature("Multiplication")
     @Story("Multiplication of double values")
-    public void multDoubleTest(double a, double b, double expected) {
-        logger.info("Mult test for double started: {} / {} = {}", a, b, expected);
+    public void multiplicationDoubleTest(double a, double b, double expected) {
+        logger.info("Multiplication test for double started: {} / {} = {}", a, b, expected);
 
         double result = calculator.mult(a,b);
 
         logger.info("Actual result: {}", result );
 
-        CalculatorAssert.assertMult(result, expected);
+        CalculatorAssert.assertMultiplication(result, expected);
     }
 
     @DataProvider(name = "multiplicationLongData")

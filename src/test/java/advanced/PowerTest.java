@@ -19,15 +19,15 @@ public class PowerTest extends TestRunner {
     @Feature("Power")
     @Story("Calculates the power of a number")
     public void powerDoubleTest(double a, double b, double expected) {
-        logger.info("POW test started for values: {} ^ {}", a, b);
+        logger.info("Power test started for values: {} ^ {}", a, b);
 
         double actual = calculator.pow(a, b);
 
-        logger.info("POW result: actual={}, expected={}", actual, expected);
+        logger.info("Power result: actual={}, expected={}", actual, expected);
 
-        CalculatorAssert.assertPow(actual, expected);
+        CalculatorAssert.assertPower(actual, expected);
 
-        logger.info("POW test PASSED for values: {} ^ {}", a, b);
+        logger.info("Power test PASSED for values: {} ^ {}", a, b);
     }
 
     @DataProvider(name = "powerDoubleData")

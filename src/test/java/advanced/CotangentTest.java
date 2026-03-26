@@ -18,15 +18,15 @@ public class CotangentTest extends TestRunner {
     @Feature("Cotangent")
     @Story("Calculating the trigonometric cotangent.")
     public void cotangentDoubleTest(double a,double expected) {
-        logger.info("CTG test started for value: {}", a);
+        logger.info("Cotangent test started for value: {}", a);
 
         double actual = calculator.ctg(a);
 
-        logger.info("CTG result: actual={}, expected={}", actual, expected);
+        logger.info("Cotangent result: actual={}, expected={}", actual, expected);
 
-        CalculatorAssert.assertCtg(actual, expected);
+        CalculatorAssert.assertCotangent(actual, expected);
 
-        logger.info("CTG test PASSED for value: {}", a);
+        logger.info("Cotangent test PASSED for value: {}", a);
     }
 
     @DataProvider(name = "cotangentDoubleData")

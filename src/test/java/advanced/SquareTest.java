@@ -19,15 +19,15 @@ public class SquareTest extends TestRunner {
     @Feature("Square")
     @Story("Calculates the square root of a number")
     public void squareDoubleTest(double a,double expected) {
-        logger.info("SQRT test started for value: {}", a);
+        logger.info("Square test started for value: {}", a);
 
         double actual = calculator.sqrt(a);
 
-        logger.info("SQRT result: actual={}, expected={}", actual, expected);
+        logger.info("Square result: actual={}, expected={}", actual, expected);
 
-        CalculatorAssert.assertSqrt(actual, expected);
+        CalculatorAssert.assertSquare(actual, expected);
 
-        logger.info("SQRT test PASSED for value: {}", a);
+        logger.info("Square test PASSED for value: {}", a);
     }
 
     @DataProvider(name = "squareDoubleData")

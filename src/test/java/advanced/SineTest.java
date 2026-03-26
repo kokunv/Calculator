@@ -19,15 +19,15 @@ public class SineTest extends TestRunner {
     @Feature("Sine")
     @Story("Calculates the sine of an angle")
     public void sineDoubleTest(double a, double expected) {
-        logger.info("SIN test started for value: {}", a);
+        logger.info("Sine test started for value: {}", a);
 
         double actual = calculator.sin(a);
 
-        logger.info("SIN result: actual={}, expected={}", actual, expected);
+        logger.info("Sine result: actual={}, expected={}", actual, expected);
 
-        CalculatorAssert.assertSin(actual, expected);
+        CalculatorAssert.assertSine(actual, expected);
 
-        logger.info("SIN test PASSED for value: {}", a);
+        logger.info("Sine test PASSED for value: {}", a);
     }
 
     @DataProvider(name = "sineDoubleData")

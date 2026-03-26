@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import runner.CalculatorAssert;
 import runner.TestRunner;
 
-public class NegativeNumTests extends TestRunner {
+public class NegativeNumTest extends TestRunner {
 
     @Test(
             dataProvider = "negativeNumData",

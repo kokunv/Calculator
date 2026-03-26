@@ -16,34 +16,34 @@ public class SubtractionTest extends TestRunner {
             dataProvider = "subtractionLongData",
             description = "Verify subtraction for long values using different combinations"
     )
-    @Epic("Calculator Operations")
+    @Epic("calculator.Calculator Operations")
     @Feature("Subtraction")
     @Story("Subtraction of long values")
     public void subtractionLongTest(long a, long b, long expected) {
-        logger.info("Sub test for long started: {} / {} = {}", a, b, expected);
+        logger.info("Subtraction test for long started: {} / {} = {}", a, b, expected);
 
         long result = calculator.sub(a,b);
 
         logger.info("Actual result: {}", result );
 
-        CalculatorAssert.assertSub(result, expected);
+        CalculatorAssert.assertSubtraction(result, expected);
     }
 
     @Test(
             dataProvider = "subtractionDoubleData",
             description = "Verify subtraction for double values with precision"
     )
-    @Epic("Calculator Operations")
+    @Epic("calculator.Calculator Operations")
     @Feature("Subtraction")
     @Story("Subtraction of double values")
-    public void subDoubleTest(double a, double b, double expected) {
-        logger.info("Sub test for double started: {} / {} = {}", a, b, expected);
+    public void subtractionDoubleTest(double a, double b, double expected) {
+        logger.info("Subtraction test for double started: {} / {} = {}", a, b, expected);
 
         double result = calculator.sub(a,b);
 
         logger.info("Actual result: {}", result );
 
-        CalculatorAssert.assertSub(result, expected);
+        CalculatorAssert.assertSubtraction(result, expected);
     }
 
     @DataProvider(name = "subtractionDoubleData")

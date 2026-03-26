@@ -19,15 +19,15 @@ public class TangentTest extends TestRunner {
     @Story("Calculate the tangent of an angle")
     public void tangentDoubleTest(double a, double expected) {
 
-        logger.info("TG test started for value: {}", a);
+        logger.info("Tangent test started for value: {}", a);
 
         double actual = calculator.tg(a);
 
-        logger.info("TG result: actual={}, expected={}", actual, expected);
+        logger.info("Tangent result: actual={}, expected={}", actual, expected);
 
-        CalculatorAssert.assertTg(actual, expected);
+        CalculatorAssert.assertTangent(actual, expected);
 
-        logger.info("TG test PASSED for value: {}", a);
+        logger.info("Tangent test PASSED for value: {}", a);
     }
 
     @DataProvider(name = "tangentDoubleData")
